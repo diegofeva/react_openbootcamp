@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ComponentA from './components/componentA';
+import ComponentA from './components/ComponentA';
+import ComponentC from './components/componentC';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <ComponentA></ComponentA>
+        <ComponentC></ComponentC>
       </header>
     </div>
   );
