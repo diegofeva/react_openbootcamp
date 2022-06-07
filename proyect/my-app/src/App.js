@@ -7,6 +7,7 @@ import Ejemplo1 from './hooks/Ejemplo1';
 import Ejemplo2 from './hooks/Ejemplo2';
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
+import AllCycles from './hooks/lifecycle/allcycles';
 
 function App() {
   return (
@@ -32,12 +33,15 @@ function App() {
         {/* Ejemplo con useState y useContext */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
         
-        <Ejemplo4 nombre="Martín">
-          {/* Todo lo que esta aqui contenido es tratado como props.children */}
+        {/* <Ejemplo4 nombre="Martín">
+          Todo lo que esta aqui contenido es tratado como props.children
           <h3>
             Contenido del props.children
           </h3>
-        </Ejemplo4>
+        </Ejemplo4> */}
+
+        {/* Ejemplo de life cycle */}
+        {/* <AllCycles></AllCycles> */}
       </header>
     </div>
   );
