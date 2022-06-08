@@ -8,6 +8,7 @@ import Ejemplo2 from './hooks/Ejemplo2';
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
 import AllCycles from './hooks/lifecycle/allcycles';
+import GreetingStyled from './components/pure/greetingStyled';
 
 function App() {
   return (
@@ -42,6 +43,10 @@ function App() {
 
         {/* Ejemplo de life cycle */}
         {/* <AllCycles></AllCycles> */}
+
+        {/* Ejemplo de estilos en componente */}
+        <GreetingStyled name="Martín"></GreetingStyled>
+
       </header>
     </div>
   );
