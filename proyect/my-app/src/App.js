@@ -9,12 +9,13 @@ import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
 import AllCycles from './hooks/lifecycle/allcycles';
 import GreetingStyled from './components/pure/greetingStyled';
+import Father from './components/container/father';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" /> */}
         
         {/*COMPONENTE PROPIO GREETING.JSX*/}
         {/* <Greeting name={"PEPE"}></Greeting> */}
@@ -45,9 +46,12 @@ function App() {
         {/* <AllCycles></AllCycles> */}
 
         {/* Ejemplo de estilos en componente */}
-        <GreetingStyled name="Martín"></GreetingStyled>
-
-      </header>
+        {/* <GreetingStyled name="Martín"></GreetingStyled> */}
+      {/* </header> */}
+      
+      <TaskListComponent ></TaskListComponent>
+      {/* <Father></Father> */}
+    
     </div>
   );
 }
