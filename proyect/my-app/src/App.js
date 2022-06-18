@@ -10,6 +10,7 @@ import Ejemplo4 from './hooks/Ejemplo4';
 import AllCycles from './hooks/lifecycle/allcycles';
 import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
+import OptionalRenderer from './components/pure/forms/optionalRenderer';
 
 function App() {
   return (
@@ -47,10 +48,15 @@ function App() {
 
         {/* Ejemplo de estilos en componente */}
         {/* <GreetingStyled name="Martín"></GreetingStyled> */}
-      {/* </header> */}
-      
-      <TaskListComponent ></TaskListComponent>
-      {/* <Father></Father> */}
+      {/* </header> */}       
+
+          {/* <Father></Father> */}
+
+        {/* Ejemplos de renderizado condicional */}
+        <OptionalRenderer/>
+
+      {/* <TaskListComponent ></TaskListComponent> */}
+    
     
     </div>
   );
