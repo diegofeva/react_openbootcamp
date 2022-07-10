@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import AppRouter1 from '../src/AppRouter1'
 
 // Añadimos bootstrap a nuestro proyecto
 import 'bootstrap/dist/css/bootstrap.css';
@@ -14,7 +15,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <AppRouter1></AppRouter1>
   </React.StrictMode>
 );
 

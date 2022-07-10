@@ -11,6 +11,8 @@ import AllCycles from './hooks/lifecycle/allcycles';
 import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import OptionalRenderer from './components/pure/forms/optionalRenderer';
+import LoginFormik from './components/pure/forms/loginFormik';
+import RegisterFormik from './components/pure/forms/registerFormik';
 
 function App() {
   return (
@@ -55,7 +57,11 @@ function App() {
         {/* Ejemplos de renderizado condicional */}
         {/* <OptionalRenderer/> */}
 
-      <TaskListComponent ></TaskListComponent>
+        {/* Ejemplo de formulario con formik y yup */}
+        {/* <LoginFormik></LoginFormik> */}
+        <RegisterFormik></RegisterFormik>
+
+      {/* <TaskListComponent ></TaskListComponent> */}
     
     
     </div>
