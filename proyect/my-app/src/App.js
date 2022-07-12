@@ -13,6 +13,7 @@ import Father from './components/container/father';
 import OptionalRenderer from './components/pure/forms/optionalRenderer';
 import LoginFormik from './components/pure/forms/loginFormik';
 import RegisterFormik from './components/pure/forms/registerFormik';
+import TaskFormFormik from './components/pure/forms/TaskFormFormik';
 
 function App() {
   return (
@@ -59,9 +60,10 @@ function App() {
 
         {/* Ejemplo de formulario con formik y yup */}
         {/* <LoginFormik></LoginFormik> */}
-        <RegisterFormik></RegisterFormik>
+        {/* <RegisterFormik></RegisterFormik> */}
 
-      {/* <TaskListComponent ></TaskListComponent> */}
+      <TaskListComponent ></TaskListComponent>
+      {/* <TaskFormFormik/> */}
     
     
     </div>

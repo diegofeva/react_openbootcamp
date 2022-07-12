@@ -57,7 +57,7 @@ function RegisterFormik() {
                 initialValues = {initialValues}
                 validationSchema = {registerSchema}
                 onSubmit = {async (values) => { 
-                    await new Promise((r) => setTimeout(r, 500));
+                    await new Promise((r) => setTimeout(r, 1500));
                     alert(JSON.stringify(values, null, 2));
                 }}
             >
