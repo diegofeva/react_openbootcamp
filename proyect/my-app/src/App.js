@@ -14,6 +14,7 @@ import OptionalRenderer from './components/pure/forms/optionalRenderer';
 import LoginFormik from './components/pure/forms/loginFormik';
 import RegisterFormik from './components/pure/forms/registerFormik';
 import TaskFormFormik from './components/pure/forms/TaskFormFormik';
+import TaskFormFormik2 from './components/pure/forms/TaskFormFormik2'; 
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
 
       <TaskListComponent ></TaskListComponent>
       {/* <TaskFormFormik/> */}
+      {/* <TaskFormFormik2/> */}
     
     
     </div>

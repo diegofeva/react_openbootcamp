@@ -43,7 +43,7 @@ const TaskForm = ({add, length}) => {
             <div className='form-outline flex-fill'>
                 <input ref={nameRef} id='inputName' type='text' className='form-control form-control-lg' required autoFocus placeholder='Task Name'/>
                 <input ref={descriptionRef} id='inputDescription' type='text' className='form-control form-control-lg' required placeholder='Task description'/>
-                <select className='form-control form-control-lg' ref={levelRef} defaultValue={LEVELS.NORMAL} id='selectLevel'>
+                <select className='form-control form-control-lg' ref={levelRef} defaultValue={LEVELS.URGENTE} id='selectLevel'>
                     <option style={normalStyle} value={LEVELS.NORMAL}>
                         Normal
                     </option>

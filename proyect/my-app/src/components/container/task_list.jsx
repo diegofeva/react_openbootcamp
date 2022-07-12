@@ -6,6 +6,7 @@ import TaskComponent from '../pure/task';
 import '../../styles/task.scss'
 import TaskForm from '../pure/forms/taskForm';
 import TaskFormFormik from '../pure/forms/TaskFormFormik';
+import TaskFormFormik2 from '../pure/forms/TaskFormFormik2';
 
 const TaskListComponent = () => {
 
@@ -121,8 +122,9 @@ const TaskListComponent = () => {
                     </div>
                 </div>
             </div>  
-            {/* <TaskForm add={addTask} length={tasks.length}></TaskForm> */}
-            <TaskFormFormik add={addTask} ></TaskFormFormik>
+            <TaskForm add={addTask} length={tasks.length}></TaskForm>
+            {/* <TaskFormFormik add={addTask} ></TaskFormFormik> */}
+            <TaskFormFormik2 add={addTask} ></TaskFormFormik2>
         </div>
     );
 };

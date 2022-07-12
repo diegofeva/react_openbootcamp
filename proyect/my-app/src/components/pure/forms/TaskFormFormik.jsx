@@ -16,6 +16,7 @@ const TaskFormFormik = ({add}) => {
         const task = new Task(
             values.taskname,
             values.taskdescription,
+            false,
             values.selectlevel
         );
 
@@ -27,6 +28,7 @@ const TaskFormFormik = ({add}) => {
             initialValues={initialCredentials}
             onSubmit={async (values) => { 
                     await new Promise((r) => setTimeout(r, 500));
+                    alert(JSON.stringify(values, null, 2));
                     createTask(values);
                     
                 }}
@@ -37,19 +39,19 @@ const TaskFormFormik = ({add}) => {
                     isSubmitting,
                     handleChande,
                     handleBlur}) => (
-                <Form>
+                    <Form>
                         
-                        <Field id='taskname' type='text' name='taskname' placeHolder='Type a task name'/>
-                        <Field id='taskdescription' type='text' name='taskdescription' placeHolder='Type the task description'/>
-                        <Field as='select' id='selectlevel' defaultValue={LEVELS.NORMAL}>
-                            <option value={LEVELS.NORMAL}>NORMAL</option>
-                            <option value={LEVELS.URGENTE}>URGENT</option>
-                            <option value={LEVELS.BLOCKING}>BLOCKING</option>
-                        </Field>
-                        <button type='submit'>
-                            Add new task
-                        </button>
-                </Form>        
+                            <Field id='taskname' type='text' name='taskname' placeHolder='Type a task name'/>
+                            <Field id='taskdescription' type='text' name='taskdescription' placeHolder='Type the task description'/>
+                            <Field as='select' id='selectlevel'>
+                                <option value={LEVELS.NORMAL}>NORMAL</option>
+                                <option value={LEVELS.URGENTE}>URGENT</option>
+                                <option value={LEVELS.BLOCKING}>BLOCKING</option>
+                            </Field>    
+                            <button type='submit'>
+                                Add new task
+                            </button>
+                    </Form>  
             
             )}            
 
