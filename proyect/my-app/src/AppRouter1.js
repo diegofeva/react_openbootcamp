@@ -8,6 +8,7 @@ import TaskDetailPage from './pages/tasks/TaskDetailPage'
 import LoginPage from './pages/auth/LoginPage'
 import { useEffect, useState } from 'react';
 import StatePage from '../src//pages//home/StatePage'
+import RegisterFormik from './components/pure/forms/registerFormik'
 
  function AppRouter1() {
 
@@ -44,6 +45,7 @@ import StatePage from '../src//pages//home/StatePage'
         <aside>
           <Link to='/'>| HOME |</Link>
           <Link to='/login'>| LOGIN |</Link>
+          <Link to='/register'>| Register |</Link>
           <Link to='/about'>| ABOUT |</Link>
           <Link to='/faqs'>| FAQS |</Link>
           <Link to='/404'>| UNEXISTED ROUTE|</Link>
@@ -58,6 +60,7 @@ import StatePage from '../src//pages//home/StatePage'
             <Route path='/' element={<HomePage/>}/>  
             <Route path='/online-state' element={<StatePage/>}></Route>
             <Route path='/login' element={logged? <Navigate to='/profile'/> : <LoginPage/>}/>
+            <Route path='/register' element={<RegisterFormik/>}/>
             
             <Route path='/about' element={<AboutPage/>}/>
             <Route path='/faqs' element={<AboutPage/>}/>
@@ -65,7 +68,7 @@ import StatePage from '../src//pages//home/StatePage'
 
             <Route path='/profile' element={logged? <ProfilePage/> : <AskLogin/>}/>
             
-            <Route path='/tasks' element={<TasksPage/>}/>
+            <Route path='/tasks' element={logged? <TasksPage/> : <AskLogin/>}/>
             <Route path='/tasks/:id' element={<TaskDetailPage task={taskList}/>}/>
           </Routes>
         </main>

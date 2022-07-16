@@ -15,6 +15,9 @@ import LoginFormik from './components/pure/forms/loginFormik';
 import RegisterFormik from './components/pure/forms/registerFormik';
 import TaskFormFormik from './components/pure/forms/TaskFormFormik';
 import TaskFormFormik2 from './components/pure/forms/TaskFormFormik2'; 
+import AsyncExample from './components/pure/AsyncExample';
+import ObservableExample from './components/pure/ObservableExample.jsx';
+import FetchExample from './components/pure/FetchExample';
 
 function App() {
   return (
@@ -63,10 +66,19 @@ function App() {
         {/* <LoginFormik></LoginFormik> */}
         {/* <RegisterFormik></RegisterFormik> */}
 
-      <TaskListComponent ></TaskListComponent>
+      {/* <TaskFormFormik/> */}
+      {/* <TaskFormFormik2/> */}  
+
+      
       {/* <TaskFormFormik/> */}
       {/* <TaskFormFormik2/> */}
+
+      {/* Ejemplos de procesos asincronos */}
     
+      {/* <TaskListComponent ></TaskListComponent> */}
+      {/* <AsyncExample></AsyncExample> */}
+      {/* <ObservableExample/> */}
+      <FetchExample/>
     
     </div>
   );
